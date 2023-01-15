@@ -20,7 +20,7 @@ const cartSlice = createSlice({
     },
     toggleAmount: (state, { payload }) => {
       const actionType = payload.type;
-      console.log(actionType);
+    
       if (actionType === 'increase') {
         const cartItem = state.cartItems.find((item) => item.id === payload.id);
         cartItem.amount += 1;
